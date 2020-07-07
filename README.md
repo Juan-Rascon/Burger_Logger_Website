@@ -6,7 +6,7 @@ Week-13 HW
 
 ## Description
 
-This application is a burger logger that uses MySQL, Node, Express, Handlebars and a homemade ORM. 
+This application is a burger logger that uses MySQL, Node, Express, Handlebars and an ORM. 
 
 ## Table of Contents
 
