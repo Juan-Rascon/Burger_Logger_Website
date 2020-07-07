@@ -21,7 +21,7 @@ This application is a burger logger that uses MySQL, Node, Express, Handlebars a
 
 ## Deployed Application
 
-Here is the URL for the deployed [Eat-Da-Burger! Application]() on Heroku.
+Here is the URL for the deployed [Eat-Da-Burger! App](https://pacific-taiga-48524.herokuapp.com/) on Heroku.
 
 
 ## Installation
