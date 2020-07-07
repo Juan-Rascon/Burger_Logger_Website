@@ -1,0 +1,39 @@
+<div class="row">
+  {{!-- <center> --}}
+    <!--Left side - All Uneaten Burgers -->
+    <div class="col-md-6">
+      <h4 class="red_text">Ready to eat!</h4>
+      <div id="ready_to_eat">
+
+        <!-- Dynamically Insert Ready Burgers Here -->
+        {{#each burgers}}
+          {{#unless devoured}}
+          <form action="burger/eat/{{id}}" method="POST">
+             <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between clearfix"><span class = "align-bottom">{{id}}. {{burger_name}}</span>
+              <button class="btn btn-success pull-right" type="submit">Devour It!</button>
+              </li>
+            </ul>
+          </form>
+          {{/unless}}
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- Right section - Devoured -->
+    <div class="col-md-6">
+      <h4 class="red_text">Already eaten!</h4>
+      <div id="already_eaten">
+
+        <!-- Devoured Burgers -->
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <ul class="list-group">
+                <li class="list-group-item disabled">{{this.id}}. {{this.burger_name}}</li>
+            </ul>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  {{!-- </center> --}}
+</div>
